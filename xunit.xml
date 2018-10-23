@@ -1,0 +1,89 @@
+<testsuite name="Mocha Tests" tests="4" failures="3" errors="3" skipped="0" timestamp="2018-10-22T18:27:06" time="107.069">
+<testcase classname="Magento Frontend Sanity Test - www.konga.com" name="log in " time="16.704"/>
+<testcase classname="Magento Frontend Sanity Test - www.konga.com" name="sign up " time="17.988"><failure message="path must be a string or Buffer"><![CDATA[TypeError: path must be a string or Buffer
+    at Object.fs.open (fs.js:636:11)
+    at Object.fs.writeFile (fs.js:1277:6)
+    at writeimagetofile (app\lib\logging.js:183:8)
+    at app\lib\logging.js:171:21
+    at ManagedPromise.invokeCallback_ (node_modules\selenium-webdriver\lib\promise.js:1384:14)
+    at TaskQueue.execute_ (node_modules\selenium-webdriver\lib\promise.js:3092:14)
+    at TaskQueue.executeNext_ (node_modules\selenium-webdriver\lib\promise.js:3075:27)
+    at asyncRun (node_modules\selenium-webdriver\lib\promise.js:2935:27)
+    at node_modules\selenium-webdriver\lib\promise.js:676:7
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+From: Task: Magento Frontend Sanity Test - www.konga.com sign up 
+    at Context.ret (node_modules\selenium-webdriver\testing\index.js:183:10)
+    at node_modules\selenium-webdriver\testing\index.js:102:5
+    at ManagedPromise.invokeCallback_ (node_modules\selenium-webdriver\lib\promise.js:1384:14)
+    at TaskQueue.execute_ (node_modules\selenium-webdriver\lib\promise.js:3092:14)
+    at TaskQueue.executeNext_ (node_modules\selenium-webdriver\lib\promise.js:3075:27)
+    at asyncRun (node_modules\selenium-webdriver\lib\promise.js:2935:27)
+    at node_modules\selenium-webdriver\lib\promise.js:676:7
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)]]></failure></testcase>
+<testcase classname="Magento Frontend Sanity Test - www.konga.com" name="Add to Cart" time="21.955"><failure message="path must be a string or Buffer"><![CDATA[TypeError: path must be a string or Buffer
+    at Object.fs.open (fs.js:636:11)
+    at Object.fs.writeFile (fs.js:1277:6)
+    at writeimagetofile (app\lib\logging.js:183:8)
+    at app\lib\logging.js:171:21
+    at ManagedPromise.invokeCallback_ (node_modules\selenium-webdriver\lib\promise.js:1384:14)
+    at TaskQueue.execute_ (node_modules\selenium-webdriver\lib\promise.js:3092:14)
+    at TaskQueue.executeNext_ (node_modules\selenium-webdriver\lib\promise.js:3075:27)
+    at asyncRun (node_modules\selenium-webdriver\lib\promise.js:2935:27)
+    at node_modules\selenium-webdriver\lib\promise.js:676:7
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+From: Task: Magento Frontend Sanity Test - www.konga.com Add to Cart
+    at Context.ret (node_modules\selenium-webdriver\testing\index.js:183:10)
+    at node_modules\selenium-webdriver\testing\index.js:102:5
+    at ManagedPromise.invokeCallback_ (node_modules\selenium-webdriver\lib\promise.js:1384:14)
+    at TaskQueue.execute_ (node_modules\selenium-webdriver\lib\promise.js:3092:14)
+    at TaskQueue.executeNext_ (node_modules\selenium-webdriver\lib\promise.js:3075:27)
+    at asyncRun (node_modules\selenium-webdriver\lib\promise.js:2935:27)
+    at node_modules\selenium-webdriver\lib\promise.js:676:7
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)]]></failure></testcase>
+<testcase classname="Magento Frontend Sanity Test - www.konga.com" name="Checkout with POD" time="0.005"><failure message="input must be a string"><![CDATA[TypeError: input must be a string
+    at escapeCss (node_modules\selenium-webdriver\lib\by.js:72:11)
+    at Function.id (node_modules\selenium-webdriver\lib\by.js:163:30)
+    at Object.elementpresent (app\lib\helpers.js:25:73)
+    at Object.validateElementPresent (app\lib\validations.js:46:14)
+    at Object.sendkeys (app\lib\actions.js:111:13)
+    at app\framework.js:212:25
+    at node_modules\async\dist\async.js:3830:24
+    at replenish (node_modules\async\dist\async.js:946:17)
+    at iterateeCallback (node_modules\async\dist\async.js:931:17)
+    at node_modules\async\dist\async.js:906:16
+    at node_modules\async\dist\async.js:3835:13
+    at app\framework.js:208:17
+    at node_modules\async\dist\async.js:3830:24
+    at replenish (node_modules\async\dist\async.js:946:17)
+    at node_modules\async\dist\async.js:950:9
+    at eachOfLimit (node_modules\async\dist\async.js:975:24)
+    at node_modules\async\dist\async.js:980:16
+    at _parallel (node_modules\async\dist\async.js:3829:5)
+    at Object.series (node_modules\async\dist\async.js:4684:5)
+    at Object.checkout_with_pod (app\framework.js:205:15)
+    at Context.&lt;anonymous&gt; (tests\test.js:37:19)
+    at runTest (node_modules\selenium-webdriver\testing\index.js:164:22)
+    at node_modules\selenium-webdriver\testing\index.js:185:16
+    at new ManagedPromise (node_modules\selenium-webdriver\lib\promise.js:1085:7)
+    at controlFlowExecute (node_modules\selenium-webdriver\testing\index.js:184:14)
+    at TaskQueue.execute_ (node_modules\selenium-webdriver\lib\promise.js:3092:14)
+    at TaskQueue.executeNext_ (node_modules\selenium-webdriver\lib\promise.js:3075:27)
+    at asyncRun (node_modules\selenium-webdriver\lib\promise.js:2982:25)
+    at node_modules\selenium-webdriver\lib\promise.js:676:7
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+From: Task: Magento Frontend Sanity Test - www.konga.com Checkout with POD
+    at Context.ret (node_modules\selenium-webdriver\testing\index.js:183:10)
+    at node_modules\selenium-webdriver\testing\index.js:102:5
+    at ManagedPromise.invokeCallback_ (node_modules\selenium-webdriver\lib\promise.js:1384:14)
+    at TaskQueue.execute_ (node_modules\selenium-webdriver\lib\promise.js:3092:14)
+    at TaskQueue.executeNext_ (node_modules\selenium-webdriver\lib\promise.js:3075:27)
+    at asyncRun (node_modules\selenium-webdriver\lib\promise.js:2935:27)
+    at node_modules\selenium-webdriver\lib\promise.js:676:7
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)]]></failure></testcase>
+</testsuite>
